@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
 
+flag = False
 def index(request):
     return render(request, 'main/index.html')
 
@@ -13,7 +14,6 @@ def register(request):
         username = request.POST['username']
         password1 = request.POST['password1']
         password2 = request.POST['password2']
-
         if password1 == password2:
             if User.objects.filter(username=username).exists():
                 return render(request, 'main/register.html', {'error': 'Имя пользователя уже занято.'})
@@ -22,7 +22,7 @@ def register(request):
                 user.save()
                 return redirect('login')
         else:
-            return render(request, 'main/register.html', {'error': 'Пароли не совпадают.'})
+            return render(request, 'main/register.html', {'error': 'Пароли не совпадают'})
     else:
         return render(request, 'main/register.html')
 
@@ -30,12 +30,10 @@ def login(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
-
         user = auth.authenticate(username=username, password=password)
-
         if user is not None:
             auth.login(request, user)
-            return redirect('dashboard')
+            return redirect('news')
         else:
             return render(request, 'main/login.html', {'error': 'Введены неверные данные!'})
     else:
