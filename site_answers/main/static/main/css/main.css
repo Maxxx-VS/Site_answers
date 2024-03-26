@@ -71,12 +71,12 @@ main p {max-width: 400px;
     position: center;
     float: center;
     clear: both;
-    width: 500px;
+    width: 400px;
     text-align: left;}
 
 form {
     margin-left: 29%;
-    width: 500px;
+    width: 400px;
     margin-top: 50px;}
 
 script .button{
