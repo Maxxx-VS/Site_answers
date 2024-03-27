@@ -1,0 +1,113 @@
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+}
+
+body {
+    background: #2c2c2c;}
+
+input {
+    border-radius: 5px;
+    width: 75%;}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    height: 100%;
+    padding: 2.5%
+    color: #fff;
+    border-right: 5px solid #4d4d4d;}
+
+aside img {
+    margin-top: 20px;}
+
+aside .logo{
+    font-size: 30px;
+    margin-top: 25px;
+    margin-left: 7px;
+    font-weight: bold;
+    color: #fff;}
+
+aside h3 {
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: 20px;}
+
+a {text-decoration: none;}
+
+
+aside ul li {
+    padding-top: 20px;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform 500ms ease-in-out;}
+
+aside ul li:hover, aside ul a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);}
+
+main {
+    float: left;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+    margin-left: 100px;
+    padding: 20px;}
+
+main h1 {
+    position: center;
+    font-size: 50px;}
+
+main p {max-width: 400px;
+        margin: 20px auto;}
+
+.alert-warning{
+    position: center;
+    float: center;
+    clear: both;
+    width: 400px;
+    text-align: left;}
+
+form {
+    margin-left: 29%;
+    width: 400px;
+    margin-top: 50px;}
+
+script .button{
+    color: red;
+    background: red;
+    background-color: red;}
+
+a.button {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+}
+div.features{
+     margin: 0 auto;
+     display: inline-block;
+
+}
+div.alert.alert-warning {
+    position: center;
+    float: center;
+    clear: both;
+    width: 700px;
+    height: 150px;
+    text-align: center;}
+
+h4 {
+    font-size: 15px;
+    font-weight: bold;
+}
+input.form-control.is-valid {
+    height: 30px;
+}

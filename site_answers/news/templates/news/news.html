@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+{% block title %}Пройти опорос{% endblock %}
+{% block content %}
+<script src="event_handling.js"></script>
+
+   <div class="features">
+    <h2>ПРОЙТИ ОПРОС</h2>
+    {% csrf_token %}
+    {% for el in news %}
+        <div class="alert alert-warning">
+            <h5>{{ el.title }}</h5>
+            <h4>{{ el.date }}</h4>
+            <h4>{{ el.ques }}</h4>
+            <input type="text" class="form-control is-valid" minlength="2" maxlength="20" required><br>
+        </div>
+    {% endfor %}
+    <button class="btn btn-danger" id="submitBtn"><b>ОТПРАВИТЬ</b></button>
+</div>
+
+
+{% endblock %}
