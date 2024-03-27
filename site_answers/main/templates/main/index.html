@@ -1,0 +1,22 @@
+{% extends 'main/layout_1.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+
+    <div class="features">
+
+        <h2>Добро пожаловать на сайт - опросник!</h2><br>
+        <h3>Здесь ты сможешь ответить на впоросы и узнать многое о себе!</h3><br>
+
+        <form action="{% url 'login' %}">
+        {% csrf_token %}
+            <button type="submit" class="btn btn-info"><b>ВОЙТИ НА САЙТ</b></button>
+        </form>
+
+        <form action="{% url 'register' %}">
+        {% csrf_token %}
+            <button type="submit" class="btn btn-warning"><b>РЕГИСТРАЦИЯ</b></button>
+        </form>
+
+
+
+{% endblock %}

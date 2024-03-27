@@ -2,7 +2,7 @@ html, body {
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow: hidden;}
+}
 
 body {
     background: #2c2c2c;}
@@ -54,10 +54,9 @@ aside ul li:hover, aside ul a:hover {
 main {
     float: left;
     color: #fff;
-    margin-top: 50px;
     text-align: center;
     width: 70%;
-    margin-left: 55px;
+    margin-left: 100px;
     padding: 20px;}
 
 main h1 {
@@ -84,9 +83,6 @@ script .button{
     background: red;
     background-color: red;}
 
-features {
-    background: red;}
-
 a.button {
     padding: 1px 6px;
     border: 1px outset buttonborder;
@@ -94,4 +90,24 @@ a.button {
     color: buttontext;
     background-color: buttonface;
     text-decoration: none;
+}
+div.features{
+     margin: 0 auto;
+     display: inline-block;
+
+}
+div.alert.alert-warning {
+    position: center;
+    float: center;
+    clear: both;
+    width: 700px;
+    height: 150px;
+    text-align: center;}
+
+h4 {
+    font-size: 15px;
+    font-weight: bold;
+}
+input.form-control.is-valid {
+    height: 30px;
 }
